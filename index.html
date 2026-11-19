@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeltRoll — Pisang Lumer Renyah & Premium</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Menghubungkan ke folder CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <img src="assets/logo.jpg" alt="Logo MeltRoll" class="brand-logo">
+        <span class="brand-name">MeltRoll</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#menu">Menu & Harga</a>
+        <a href="#galeri-produk">Galeri MeltRoll</a>
+        <a href="#galeri-customer">Galeri Customer</a>
+        <a href="#testimoni">Ulasan</a>
+        <a href="#lokasi">Lokasi</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" id="openCartBtn" aria-label="Buka Keranjang">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Keranjang</span>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / BANNER SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="hero-pill">✨ Fresh Made by Order • 100% Halal</span>
+        <h1>Renyah di Luar, <span>Lumer Melimpah</span> di Dalam.</h1>
+        <p>
+          Nikmati perpaduan kulit lumpia krispi keemasan dengan pisang pilihan manis legit dan balutan glaze premium Matcha, Cokelat Lumer, serta Taro yang bikin nagih di setiap gigitan.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">
+            <i class="fa-solid fa-utensils"></i> Lihat Menu & Harga
+          </a>
+          <a href="#lokasi" class="btn btn-outline">
+            <i class="fa-solid fa-location-dot"></i> Info Outlet
+          </a>
+        </div>
+        <div class="hero-features">
+          <div class="feature-item">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Tanpa Pengawet</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-fire-burner"></i>
+            <span>Digoreng Dadakan</span>
+          </div>
+          <div class="feature-item">
+            <i class="fa-solid fa-star"></i>
+            <span>4.9/5 Rating Pelanggan</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-card">
+          <img src="assets/produk7.jpg" alt="Banner MeltRoll Pisang Lumer">
+          <div class="floating-badge">
+            <span class="badge-title">Best Seller 🔥</span>
+            <span class="badge-sub">MeltRoll Lumer Premium</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KATALOG MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pilihan Rasa Favorit</span>
+        <h2>Daftar Varian & Harga</h2>
+        <p>Pilih varian favoritmu, atur jumlah porsi, dan pesan langsung lewat WhatsApp.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </div>
+  </section>
+
+  <!-- GALERI MELT ROLL -->
+  <section id="galeri-produk" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tekstur & Glaze Melimpah</span>
+        <h2>Galeri MeltRoll</h2>
+        <p>Klik pada foto untuk memperbesar tampilan detail lumeran setiap varian.</p>
+      </div>
+
+      <div class="gallery-grid gallery-3">
+        <figure class="gallery-card">
+          <div class="gallery-item" data-caption="MeltRoll Matcha dengan lelehan greentea pekat dan renyah">
+            <img src="assets/produk4.jpg" alt="Galeri MeltRoll 1">
+            <div class="gallery-overlay"><span><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</span></div>
+          </div>
+          <figcaption class="gallery-caption">
+            <h4>MeltRoll Matcha Lumer ♡</h4>
+            <p>Glaze matcha pekat, wangi greentea, manisnya pas dan nggak bikin enek.</p>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <div class="gallery-item" data-caption="Varian Taro Ungu yang manis lembut dan creamy">
+            <img src="assets/produk5.jpg" alt="Galeri MeltRoll 2">
+            <div class="gallery-overlay"><span><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</span></div>
+          </div>
+          <figcaption class="gallery-caption">
+            <h4>MeltRoll Taro Ungu ♡</h4>
+            <p>Manis lembut talas ungu yang creamy, berpadu sama kulit lumpia yang krispi.</p>
+          </figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <div class="gallery-item" data-caption="Cokelat Lumer melimpah hingga ke dalam gulungan">
+            <img src="assets/produk6.jpg" alt="Galeri MeltRoll 3">
+            <div class="gallery-overlay"><span><i class="fa-solid fa-magnifying-glass-plus"></i> Lihat Detail</span></div>
+          </div>
+          <figcaption class="gallery-caption">
+            <h4>MeltRoll Cokelat Lumer ♡</h4>
+            <p>Cokelat pekat melimpah sampai ke dalam, lumer di setiap gigitan.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI CUSTOMER - HANYA produk8 & produk9, produk10 SUDAH DIHAPUS -->
+  <section id="galeri-customer" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Dokumentasi Pesanan</span>
+        <h2>Galeri Customer MeltRoll</h2>
+        <p>Terima kasih kepada para pelanggan setia yang sudah memesan dan menikmati MeltRoll!</p>
+      </div>
+
+      <div class="gallery-grid gallery-2">
+        <!-- FOTO CUSTOMER 1 - produk8 -->
+        <figure class="gallery-card">
+          <div class="gallery-item customer-card" data-caption="Paket MeltRoll siap santap dalam kemasan higienis">
+            <img src="assets/produk8.jpg" alt="Galeri Customer 1">
+            <div class="gallery-overlay"><span><i class="fa-solid fa-magnifying-glass-plus"></i> Pesanan Customer</span></div>
+          </div>
+          <figcaption class="gallery-caption">
+            <h4>MeltRoll Oreo & Matcha Lumer ♡</h4>
+            <p>Topping melimpah, Oreo crunchy + matcha lumer, pesanan favorit customer!</p>
+          </figcaption>
+        </figure>
+        <!-- FOTO CUSTOMER 2 - produk9 -->
+        <figure class="gallery-card">
+          <div class="gallery-item customer-card" data-caption="Varian mix lumer favorit pelanggan">
+            <img src="assets/produk9.jpg" alt="Galeri Customer 2">
+            <div class="gallery-overlay"><span><i class="fa-solid fa-magnifying-glass-plus"></i> Pesanan Customer</span></div>
+          </div>
+          <figcaption class="gallery-caption">
+            <h4>Aku bersana customer ♡</h4>
+            <p>kami akan mengusahakan kebahagiaan customer!</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ULASAN & FORM TESTIMONI -->
+  <section id="testimoni" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Apa Kata Mereka?</span>
+        <h2>Ulasan Pelanggan Kami</h2>
+        <p>Kepuasan rasa dan kerenyahan di setiap gigitan adalah prioritas utama kami.</p>
+      </div>
+
+      <div class="reviews-layout">
+        <div class="reviews-list" id="reviewsList"></div>
+
+        <div class="review-form-card">
+          <h3>Tulis Ulasanmu</h3>
+          <p class="form-sub">Sudah pernah coba MeltRoll? Bagikan pengalamanmu di sini!</p>
+          <form id="reviewForm">
+            <div class="form-group">
+              <label for="reviewerName">Nama Kamu</label>
+              <input type="text" id="reviewerName" placeholder="Contoh: Rina Putri" required>
+            </div>
+            <div class="form-group">
+              <label for="reviewVariant">Varian Favorit</label>
+              <select id="reviewVariant">
+                <option value="MeltRoll Matcha">MeltRoll Matcha</option>
+                <option value="MeltRoll Cokelat Lumer">MeltRoll Cokelat Lumer</option>
+                <option value="MeltRoll Taro Ungu">MeltRoll Taro Ungu</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Rating</label>
+              <div class="star-selector" id="starSelector">
+                <i class="fa-solid fa-star active" data-rating="1"></i>
+                <i class="fa-solid fa-star active" data-rating="2"></i>
+                <i class="fa-solid fa-star active" data-rating="3"></i>
+                <i class="fa-solid fa-star active" data-rating="4"></i>
+                <i class="fa-solid fa-star active" data-rating="5"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="reviewText">Komentar</label>
+              <textarea id="reviewText" rows="3" placeholder="Ceritakan rasa dan teksturnya..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Ulasan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO OUTLET & FOOTER -->
+  <footer id="lokasi" class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="brand brand-light">
+          <img src="assets/logo.jpg" alt="Logo MeltRoll" class="brand-logo">
+          <span class="brand-name">MeltRoll</span>
+        </a>
+        <p>Camilan pisang gulung renyah dengan lumeran glaze premium buatan rumahan yang higienis, halal, dan selalu disajikan hangat.</p>
+        <div class="social-links">
+          <a href="https://wa.me/6281262895243" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <h4>Jam Operasional</h4>
+        <ul>
+          <li><i class="fa-regular fa-clock"></i> Senin – Jumat: 10.00 – 20.00 WIB</li>
+          <li><i class="fa-regular fa-clock"></i> Sabtu – Minggu: 10.00 – 22.00 WIB</li>
+          <li><i class="fa-solid fa-motorcycle"></i> Melayani Delivery & Pickup</li>
+        </ul>
+      </div>
+
+      <div class="footer-info">
+        <h4>Lokasi Outlet</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Jalan Pasar 2 Bahapal, Pematangsiantar</li>
+          <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6281262895243" target="_blank" rel="noopener" style="color:#cbd5e1;text-decoration:none;">0812-6289-5243</a></li>
+        </ul>
+        <a href="https://maps.app.goo.gl/PCrQUGfZ5yxHXYDM9" target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">
+          <i class="fa-solid fa-map"></i> Buka Google Maps
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 MeltRoll Indonesia. Dibuat dengan sepenuh hati untuk pecinta camilan manis.</p>
+    </div>
+  </footer>
+
+  <!-- DRAWER KERANJANG BELANJA -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Keranjang Pesanan</h3>
+      <button class="close-btn" id="closeCartBtn" aria-label="Tutup Keranjang">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartItemsContainer"></div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="checkout-options">
+        <label for="customerNameInput">Nama Pemesan</label>
+        <input type="text" id="customerNameInput" placeholder="Masukkan nama Anda">
+
+        <label for="deliveryMethod">Metode Pengambilan</label>
+        <select id="deliveryMethod">
+          <option value="Ambil di Outlet (Pickup)">Ambil di Outlet (Pickup)</option>
+          <option value="Delivery / Kurir Lokal">Delivery / Kurir Lokal</option>
+        </select>
+
+        <label for="orderNotes">Catatan Tambahan (Opsional)</label>
+        <input type="text" id="orderNotes" placeholder="Contoh: Ekstra glaze matcha">
+      </div>
+
+      <div class="cart-total-row">
+        <span>Total Pembayaran</span>
+        <strong id="cartTotalAmount">Rp 0</strong>
+      </div>
+
+      <button class="btn btn-whatsapp btn-full" id="checkoutWaBtn">
+        <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- MODAL LIGHTBOX GALERI -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <img id="lightboxImg" src="" alt="Preview">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Menghubungkan ke folder JS -->
+  <script src="JS/script.js"></script>
+</body>
+</html>
